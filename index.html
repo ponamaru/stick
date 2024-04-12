@@ -127,21 +127,4 @@ function keydownfunc( event ) {
 			if( key_code === 90 ) alert(x2);
                 }
 </script>
-<script>
-var text = 0;
-var kanjani = [ '丸山くん', '大倉くん', '村上くん', '横山くん', '錦戸くん', '安田くん' ];
-document.write ( kanjani[text] );
-</script>
-<script>
-		addEventListener( "keydown", keydownfunc );
-
-		function keydownfunc( event ) {
-
-	        var key_code = event.keyCode;
-
-			if( key_code === 90 ) 
-				var text = text += 1;
-                                document.write ( kanjani[text] );
-                }
-</script>
 </html>
