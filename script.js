@@ -389,11 +389,6 @@ window.addEventListener('load',function(){
                         setTimeout(fadeOutIn_bg_change,1500);
                         setTimeout(fadeOutIn_bg_remove,3000);
                         break;
-                    case 'changeimg2':
-
-                        const changeimg2 = document.getElementById("img1");
-                                changeimg.src = "car.png";
-                        break;
                 }
             }
         if(!stop_flg){
