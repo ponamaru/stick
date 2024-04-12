@@ -15,11 +15,6 @@
 			left: 0;
 		}
 	</style>
-<style>
-body {
-  background-color: black;
-}
-</style>
 </style>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
@@ -133,5 +128,22 @@ function keydownfunc( event ) {
 
 			if( key_code === 90 ) alert(x2);
                 }
+</script>
+<div id="scenario"></div>
+<script>
+var t = 0
+addEventListener( "keydown", keydownfunc );
+
+function keydownfunc( event ) {
+
+var key_code = event.keyCode;
+
+	if( key_code === 32 ) t += 1;
+}
+</script>
+<script>
+  const scenarioElement = document.getElementById("scenario");
+  const scenarioText = t;
+  scenarioElement.innerText = scenarioText;
 </script>
 </html>
