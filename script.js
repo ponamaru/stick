@@ -20,7 +20,7 @@ window.addEventListener('load',function(){
     var text = [];
 
     text[0] = [
-        "",
+        "あ",
         "今日は雨が降るんだ",
         "でもシェナが傘を忘れて買い物に行ったみたい。",
         "シェナに傘を届けに行こう",
