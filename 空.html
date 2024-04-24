@@ -1,0 +1,86 @@
+<html>
+    <p><a href="ml.html#back">戻る</a></p>
+    <audio controls src="らにしあらにしあ.mp3"></audio>
+    <audio controls src="サワヤンポップ.mp3"></audio>
+<img src="棒.png" class="xyugu" id="xyugu" width="300">
+<img src="頭.png" class="target" id="target" width="300">
+<style>
+.target {
+  animation: floating-y 1.8s ease-in-out infinite alternate-reverse;
+}
+@keyframes floating-y {
+  0% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(2%);
+  }
+}
+</style>
+	<style>
+		#xyugu {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#target {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+<script>
+var playermotion = 0;
+var y = 0;
+var x = 0;
+document.getElementById( 'target' ).style.top = y + "px";
+document.getElementById( 'target' ).style.left = x + "px";
+document.getElementById( 'xyugu' ).style.top = y + 50 + "px";
+document.getElementById( 'xyugu' ).style.left = x + "px";
+</script>
+<body>
+<img src="stickhead.png" id="stickhead" class="stickhead">
+<script>
+function stylechange( event ) {
+  if(playermotion < 1) {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = '8.css';
+  document.head.appendChild(link);
+  }
+}
+</script>
+</body>
+<script>
+addEventListener( "keydown", keydownfunc );
+
+		//キーが押されたときに呼び出される関数
+function keydownfunc( event ) {
+
+			//押されたボタンに割り当てられた数値（すうち）を、key_codeに代入
+	var key_code = event.keyCode;
+
+	if( key_code === 77 ) {
+        if(playermotion < 1) {
+        playermotion += 1;
+        } else {
+        playermotion -= 1;
+        }
+        }
+</script>
+<script>
+addEventListener( "keydown", stylechange );
+</script>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>素材まとめ</p>
+<img src="鈴木の顔透過素材.png">
+<img src="反転鈴木.png">
+<img src="菅沼くん(透過素材).png">
+<img src="ゅぐ.png">
+<img src="">
+</html>
+   
